@@ -1,0 +1,34 @@
+{
+    "details": {
+        "title": "ISTRIUM blockchain Deployment script.",
+        "syntax": "sidechain.sh [argument] [-option]",
+        "author": "Leo Pechin <pechin.leo@gmail.com> from the work of Brian Faust <hello@brianfaust.me> & Alex Barnsley <alex@ark.io>",
+        "version": "0.0.1"
+    },
+    "commands": [{
+        "command": "start-node",
+        "description": "Start the Node",
+        "method": "process_node_start"
+    }, {
+        "command": "stop-node",
+        "description": "Stop the Node",
+        "method": "process_node_stop"
+    }, {
+        "command": "restart-node",
+        "description": "Restart the Node",
+        "method": "process_node_restart"
+    }, {
+        "command": "install-node",
+        "description": "Install the Node",
+        "method": "app_install_node"
+    }, {
+        "command": "uninstall-node",
+        "description": "Uninstall the Node",
+        "method": "app_uninstall_node"
+    }, {
+        "abbreviation": "-h",
+        "command": "help",
+        "description": "Output usage information",
+        "method": "help_me"
+    }]
+}
